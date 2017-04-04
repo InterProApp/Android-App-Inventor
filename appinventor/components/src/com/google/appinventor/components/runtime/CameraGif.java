@@ -71,11 +71,11 @@ public class Camera extends AndroidNonvisibleComponent
 
       imageFile = Uri.fromFile(new File(Environment.getExternalStorageDirectory(),
         "/Pictures/app_inventor_" + date.getTime()
-        + ".jpg"));
+        + ".gif"));
 
       ContentValues values = new ContentValues();
       values.put(MediaStore.Images.Media.DATA, imageFile.getPath());
-      values.put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg");
+      values.put(MediaStore.Images.Media.MIME_TYPE, "image/gif");
       values.put(MediaStore.Images.Media.TITLE, imageFile.getLastPathSegment());
 
       if (requestCode == 0) {
